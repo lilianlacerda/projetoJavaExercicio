@@ -11,7 +11,6 @@ public class PrimeiroExercicio {
 		ArrayList<String> arrayCores = new ArrayList<String>();
 		
 		String cores;
-		
 		Scanner leia = new Scanner(System.in);
 		
 		for(int i = 0; i <= 4; i++ ) {
@@ -26,9 +25,6 @@ public class PrimeiroExercicio {
 		Collections.sort(arrayCores);
 		System.out.println("\nOrdenar as Cores: ");
 		System.out.println(arrayCores);
-		
-		
-
 	}
 
 }
