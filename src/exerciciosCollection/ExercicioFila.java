@@ -12,9 +12,9 @@ public class ExercicioFila {
 		Scanner leia = new Scanner(System.in);
 
 		String nome;
-		int opcao;
+		int opcao = 1;
 
-		do {
+		while (opcao != 0) {
 
 			System.out.println("\nFila do banco!");
 			System.out.println("Escolha a opção correspondente: ");
@@ -60,17 +60,23 @@ public class ExercicioFila {
 				}
 				break;
 				
+			case 0: 
+				
+				break;
+				
 			default: 
 				System.out.println("Opção inválida! ");
 
 			}
 
-			System.out.println("\nDeseja voltar para o menu? ");
-			System.out.println("9 - sim");
-			System.out.println("0 - Não");
-			opcao = leia.nextInt();
+			if (opcao != 0){
+				System.out.println("\nDeseja voltar para o menu? ");
+				System.out.println("9 - sim");
+				System.out.println("0 - Não");
+				opcao = leia.nextInt();
+			}
 
-		} while (opcao != 0);
+		} 
 
 		System.out.println("\nVolte sempre!");
 
